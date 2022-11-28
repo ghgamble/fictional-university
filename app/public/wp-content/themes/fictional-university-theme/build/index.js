@@ -224,8 +224,15 @@ class Search {
     }
   }
   getResults() {
-    this.resultsDiv.html('Imagine real search results here...');
-    this.isSpinnerVisible = false;
+    jquery__WEBPACK_IMPORTED_MODULE_0___default().getJSON('/wp-json/wp/v2/posts?search=' + this.searchField.val(), posts => {
+      let testArray = ['red', 'orange', 'yellow'];
+      this.resultsDiv.html(`
+        <h2 class="search-overlay__section-title">General Information</h2>
+        <ul class="link-list min-list">
+          ${posts.map(post => `<li><a href="${post.slug}">${post.title.rendered}</a></li>`)}
+        </ul>
+      `);
+    });
   }
   typingLogic() {
     if (this.searchField.val() != this.previousValue) {
