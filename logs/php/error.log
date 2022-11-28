@@ -168,3 +168,5 @@ Stack trace:
 [23-Nov-2022 12:27:13 UTC] PHP   4. WP_Hook->apply_filters() /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/class-wp-hook.php:332
 [23-Nov-2022 12:27:13 UTC] PHP   5. wp_version_check() /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/class-wp-hook.php:308
 [23-Nov-2022 12:27:13 UTC] PHP   6. trigger_error() /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/update.php:209
+[24-Nov-2022 00:04:02 UTC] Cron reschedule event error for hook: wp_privacy_delete_old_export_files, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"hourly","args":[],"interval":3600}
+[27-Nov-2022 18:07:22 UTC] Cron reschedule event error for hook: wp_privacy_delete_old_export_files, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"hourly","args":[],"interval":3600}
