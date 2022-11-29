@@ -171,3 +171,33 @@ Stack trace:
 [24-Nov-2022 00:04:02 UTC] Cron reschedule event error for hook: wp_privacy_delete_old_export_files, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"hourly","args":[],"interval":3600}
 [27-Nov-2022 18:07:22 UTC] Cron reschedule event error for hook: wp_privacy_delete_old_export_files, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"hourly","args":[],"interval":3600}
 [29-Nov-2022 20:37:37 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ';' in /Users/gracegamble/Local Sites/fictional-university/app/public/wp-content/themes/fictional-university-theme/inc/search-route.php on line 12
+[29-Nov-2022 21:16:02 UTC] PHP Warning:  Use of undefined constant get_post_type - assumed 'get_post_type' (this will throw an Error in a future version of PHP) in /Users/gracegamble/Local Sites/fictional-university/app/public/wp-content/themes/fictional-university-theme/inc/search-route.php on line 25
+[29-Nov-2022 21:16:02 UTC] PHP Stack trace:
+[29-Nov-2022 21:16:02 UTC] PHP   1. {main}() /Users/gracegamble/Local Sites/fictional-university/app/public/index.php:0
+[29-Nov-2022 21:16:02 UTC] PHP   2. require() /Users/gracegamble/Local Sites/fictional-university/app/public/index.php:17
+[29-Nov-2022 21:16:02 UTC] PHP   3. wp() /Users/gracegamble/Local Sites/fictional-university/app/public/wp-blog-header.php:16
+[29-Nov-2022 21:16:02 UTC] PHP   4. WP->main() /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/functions.php:1332
+[29-Nov-2022 21:16:02 UTC] PHP   5. WP->parse_request() /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/class-wp.php:780
+[29-Nov-2022 21:16:02 UTC] PHP   6. do_action_ref_array() /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/class-wp.php:399
+[29-Nov-2022 21:16:02 UTC] PHP   7. WP_Hook->do_action() /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/plugin.php:565
+[29-Nov-2022 21:16:02 UTC] PHP   8. WP_Hook->apply_filters() /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/class-wp-hook.php:332
+[29-Nov-2022 21:16:02 UTC] PHP   9. rest_api_loaded() /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/class-wp-hook.php:308
+[29-Nov-2022 21:16:02 UTC] PHP  10. WP_REST_Server->serve_request() /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/rest-api.php:410
+[29-Nov-2022 21:16:02 UTC] PHP  11. WP_REST_Server->dispatch() /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/rest-api/class-wp-rest-server.php:442
+[29-Nov-2022 21:16:02 UTC] PHP  12. WP_REST_Server->respond_to_request() /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/rest-api/class-wp-rest-server.php:1018
+[29-Nov-2022 21:16:02 UTC] PHP  13. universitySearchResults() /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/rest-api/class-wp-rest-server.php:1171
+[29-Nov-2022 21:16:02 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/gracegamble/Local Sites/fictional-university/app/public/wp-content/themes/fictional-university-theme/inc/search-route.php:25) in /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/rest-api/class-wp-rest-server.php on line 1752
+[29-Nov-2022 21:16:02 UTC] PHP Stack trace:
+[29-Nov-2022 21:16:02 UTC] PHP   1. {main}() /Users/gracegamble/Local Sites/fictional-university/app/public/index.php:0
+[29-Nov-2022 21:16:02 UTC] PHP   2. require() /Users/gracegamble/Local Sites/fictional-university/app/public/index.php:17
+[29-Nov-2022 21:16:02 UTC] PHP   3. wp() /Users/gracegamble/Local Sites/fictional-university/app/public/wp-blog-header.php:16
+[29-Nov-2022 21:16:02 UTC] PHP   4. WP->main() /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/functions.php:1332
+[29-Nov-2022 21:16:02 UTC] PHP   5. WP->parse_request() /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/class-wp.php:780
+[29-Nov-2022 21:16:02 UTC] PHP   6. do_action_ref_array() /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/class-wp.php:399
+[29-Nov-2022 21:16:02 UTC] PHP   7. WP_Hook->do_action() /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/plugin.php:565
+[29-Nov-2022 21:16:02 UTC] PHP   8. WP_Hook->apply_filters() /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/class-wp-hook.php:332
+[29-Nov-2022 21:16:02 UTC] PHP   9. rest_api_loaded() /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/class-wp-hook.php:308
+[29-Nov-2022 21:16:02 UTC] PHP  10. WP_REST_Server->serve_request() /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/rest-api.php:410
+[29-Nov-2022 21:16:02 UTC] PHP  11. WP_REST_Server->send_headers() /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/rest-api/class-wp-rest-server.php:475
+[29-Nov-2022 21:16:02 UTC] PHP  12. WP_REST_Server->send_header() /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/rest-api/class-wp-rest-server.php:1764
+[29-Nov-2022 21:16:02 UTC] PHP  13. header() /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/rest-api/class-wp-rest-server.php:1752
