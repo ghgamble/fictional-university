@@ -201,3 +201,10 @@ Stack trace:
 [29-Nov-2022 21:16:02 UTC] PHP  11. WP_REST_Server->send_headers() /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/rest-api/class-wp-rest-server.php:475
 [29-Nov-2022 21:16:02 UTC] PHP  12. WP_REST_Server->send_header() /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/rest-api/class-wp-rest-server.php:1764
 [29-Nov-2022 21:16:02 UTC] PHP  13. header() /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/rest-api/class-wp-rest-server.php:1752
+[30-Nov-2022 17:04:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_the_post_thubmbnail_url() in /Users/gracegamble/Local Sites/fictional-university/app/public/wp-content/themes/fictional-university-theme/inc/search-route.php:37
+Stack trace:
+#0 /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/rest-api/class-wp-rest-server.php(1171): universitySearchResults(Object(WP_REST_Request))
+#1 /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/rest-api/class-wp-rest-server.php(1018): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/university/v1/...', Array, NULL)
+#2 /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/rest-api/class-wp-rest-server.php(442): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#3 /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/rest-api.php(410): WP_REST_Server->serve_request('/university/v1/...')
+#4 /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/class-wp-hook.php(308): re in /Users/gracegamble/Local Sites/fictional-university/app/public/wp-content/themes/fictional-university-theme/inc/search-route.php on line 37
