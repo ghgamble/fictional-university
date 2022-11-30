@@ -208,3 +208,5 @@ Stack trace:
 #2 /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/rest-api/class-wp-rest-server.php(442): WP_REST_Server->dispatch(Object(WP_REST_Request))
 #3 /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/rest-api.php(410): WP_REST_Server->serve_request('/university/v1/...')
 #4 /Users/gracegamble/Local Sites/fictional-university/app/public/wp-includes/class-wp-hook.php(308): re in /Users/gracegamble/Local Sites/fictional-university/app/public/wp-content/themes/fictional-university-theme/inc/search-route.php on line 37
+[30-Nov-2022 17:35:41 UTC] PHP Parse error:  syntax error, unexpected ')' in /Users/gracegamble/Local Sites/fictional-university/app/public/wp-content/themes/fictional-university-theme/inc/search-route.php on line 79
+[30-Nov-2022 17:35:41 UTC] PHP Parse error:  syntax error, unexpected ')' in /Users/gracegamble/Local Sites/fictional-university/app/public/wp-content/themes/fictional-university-theme/inc/search-route.php on line 79

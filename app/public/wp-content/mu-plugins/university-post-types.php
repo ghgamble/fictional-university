@@ -16,7 +16,7 @@ function university_post_types() {
     'menu_icon' => 'dashicons-calendar'
   ));
   register_post_type('program', array(
-    'supports' => array('title', 'editor', 'excerpt'),
+    'supports' => array('title', 'excerpt'),
     'rewrite' => array('slug' => 'programs'),
     'has_archive' => true,
     'public' => true,
