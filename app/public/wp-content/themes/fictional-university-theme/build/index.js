@@ -227,6 +227,7 @@ class Search {
   }
   getResults() {
     jquery__WEBPACK_IMPORTED_MODULE_0___default().getJSON(universityData.root_url + '/wp-json/university/v1/search?term=' + this.searchField.val(), results => {
+      console.log(results);
       this.resultsDiv.html(`
         <div class="row">
           <div class="one-third">

@@ -10,6 +10,7 @@ function university_register_search() {
 function universitySearchResults($data) {
   $mainQuery = new WP_Query(array(
     'post_type' => array('post', 'page', 'professor', 'program', 'campus', 'event'),
+    'posts_per_page' => -1,
     // S means search
     's' => sanitize_text_field($data['term'])
   ));
